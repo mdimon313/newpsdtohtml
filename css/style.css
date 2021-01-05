@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Ubuntu:wght@300&display=swap');
+
+/*
+font-family: 'Inconsolata', monospace;
+font-family: 'Playfair Display', serif;
+font-family: 'Ubuntu', sans-serif;
+*/
+
+/* !================ GLOBEL STYLE=============== */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.content-wrapper {
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+section {
+    padding: 60px 0;
+}
+.row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.col-50 {
+    width: 50%;
+    float: left;
+    padding: 0 15px;
+}
+.col-100 {
+    width: 100%;
+    padding: 0 15px;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+ul{
+    list-style: none;
+}
+a, a:focus {
+    text-decoration: none;
+    color: #626262;
+    border: none;
+}
+h1, h2, h3 {
+    font-size: 30px;
+    color: #626262;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+}
+.mb-5 {
+    margin-bottom: 80px;
+}
+/* !============== END GLOBEL STYLE ============= */
+
+/* !================== Hesder Style ============== */
+.header {
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .logo {
+    max-width: 150px;
+}
+nav .logo a {
+    font-family: 'Inconsolata', monospace;
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #000;
+    line-height: 24px;
+    letter-spacing: 5px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+nav ul li a {
+    text-transform: uppercase;
+    margin-left: 80px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* !========== Banner =============== */
+.banner-image img {
+    width: 100%;
+    height: 100%;
+}
+
+/* !========== Photo Diray =============*/
+.photodiary-content {
+    overflow: hidden;
+}
+
+.photodiary-content .content-top {
+    color: #b4ad9e;
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+
+.photodiary-content .content-bottom {
+    color: #b4ad9e;
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-top: 18px;
+}
+.photodiary-content h1 {
+    margin-bottom: 18px;
+    font-size: 30px;
+    color: #626262;
+    font-weight: 400;
+}
+.photodiary-content .content-middle {
+    line-height: 24px;
+    font-size: 15px;
+    color: #626262;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+}
+
+/* !============== Post Style =========== */
+.post-single-box {
+    overflow: hidden;
+}
+
+.post-single-box .post-image {
+    overflow: hidden;
+}
+
+.post-single-box .post-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.post-discription {
+    overflow: hidden;
+}
+
+.post-discription .post-title {
+    display: block;
+    padding: 15px 0;
+    color: #b4ad9e;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+}
+
+.post-discription h1 {
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.post-discription p {
+    font-size: 14px;
+    color: #626262;
+    line-height: 24px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+}
+
+/* !============= NEWSLATTER ============= */
+section.newlatter {
+    background-color: #f0f0f0;
+}
+
+.email-box {
+    text-align: center;
+    overflow: hidden;
+}
+
+.head-title {
+    margin-bottom: 30px;
+}
+
+.head-title h2 {
+    color: #191919;
+    font-weight: 400;
+    font-size: 36px;
+}
+.input-box {
+    width: 400px;
+    margin: 0 auto;
+    border-bottom: 1px solid #333;
+    display: flex;
+    align-items: center;
+}
+
+.input-box input {
+    padding: 12px 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    flex: 1;
+}
+
+.input-box i {
+    font-size: 20px;
+    color: #191919;
+    cursor: pointer;
+}
+
+.load-more-btn {
+    display: grid;
+    place-items: center;
+    margin: 0 auto;
+    margin-top: 3rem;
+    border: 1px solid #191919;
+    outline: none;
+    border-radius: 2px;
+    padding: 12px 25px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 400;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+/* !================ FOOTER ============ */
+.footer {
+    background-color: #f0f0f0;
+    padding: 40px 0;
+}
+.social-links {
+    display: flex;
+    align-items: center;
+    float: right;
+}
+.social-links ul {
+    display: flex;
+}
+.social-links ul li {
+    margin-left: 15px;
+}
+
+@media (max-width: 360px) {
+    .col-50 {
+        width: 100% !important;
+        text-align: center;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .social-links {
+        float: none;
+    }
+}
